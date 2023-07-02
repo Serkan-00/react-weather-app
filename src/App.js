@@ -4,6 +4,7 @@ import TopButtons from "./TopButtons";
 import Inputs from "./Inputs";
 import TimeAndLocation from "./TimeAndLocation";
 import TemperatureAndDetails from "./TemperatureAndDetails";
+import Forecast from "./Forecast"; 
 
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
       
       <TimeAndLocation /> 
       <TemperatureAndDetails />
+
+      <Forecast title="hourly forecast"  />
+      <Forecast title="daily forecast"  />
     </div>
   );
 };
