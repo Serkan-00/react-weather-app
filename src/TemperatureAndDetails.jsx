@@ -60,25 +60,27 @@ function TemperatureAndDetails({weather: {
 
       <UilSun />
       <p className="font-light">
-        Rise: <span className="font-medium ml-l">{formatToLocalTime(sunrise, timezone, )}</span>
+        Rise: <span className="font-medium ml-l">
+        {formatToLocalTime(sunrise, timezone, "hh:mm a" )}</span>
       </p>
       <p className="font-light">|</p>
 
       <UilSunset />
       <p className="font-light">
-        Set: <span className="font-medium ml-l">07:35 PM</span>
+        Set: <span className="font-medium ml-l">
+        {formatToLocalTime(sunset, timezone, "hh:mm a" )}</span>
       </p>
       <p className="font-light">|</p>
 
       <UilSun />
       <p className="font-light">
-        High: <span className="font-medium ml-l">45°</span>
+        High: <span className="font-medium ml-l">{`${temp_max.toFixed()}°`}</span>
       </p>
       <p className="font-light">|</p>
 
       <UilSun />
       <p className="font-light">
-        Low: <span className="font-medium ml-l">40°</span>
+        Low: <span className="font-medium ml-l">{`${temp_min.toFixed()}°`}</span>
       </p>
 
 
