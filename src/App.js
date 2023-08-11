@@ -33,12 +33,16 @@ function App() {
     shadow-gray-400">
       <TopButtons />
       <Inputs /> 
-      
-      <TimeAndLocation /> 
-      <TemperatureAndDetails />
 
-      <Forecast title="hourly forecast"  />
-      <Forecast title="daily forecast"  />
+      {weather &&(
+       <div>
+        <TimeAndLocation weather={weather} /> 
+        <TemperatureAndDetails weather={weather} />
+
+        <Forecast title="hourly forecast"  />
+        <Forecast title="daily forecast"  />
+       </div>
+      )}
     </div>
   );
 };
